@@ -60,6 +60,7 @@
             fetch('/repos/vporwal3/DataVizProject/dispatches', {
                 method: 'POST',
                 headers: {
+                    'Accept': 'application/vnd.github.everest-preview+json',
                     'Authorization': 'token {{ secrets.PERSONAL_ACCESS_TOKEN }}',
                     'Content-Type': 'application/json'
                 },
