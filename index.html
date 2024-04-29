@@ -57,7 +57,7 @@
             document.getElementById('refreshMessage').innerText = 'Refreshing data...';
             
             // Trigger the execution of the Python script here
-            fetch('refresh_data.py')
+            fetch('refresh.py')
                 .then(response => response.text())
                 .then(data => {
                     console.log(data);
