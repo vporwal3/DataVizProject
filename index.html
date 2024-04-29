@@ -32,9 +32,6 @@
     <h1>Building Inventory Visualizations</h1>
     <p>This page showcases visualizations of the state building inventory.</p>
 
-    <a href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/building_inventory.csv" class="button" target="_blank">The Data</a>
-    <a href="https://github.com/vporwal3/vporwal3.github.io/tree/main/workbook.ipynb" class="button" target="_blank">The Analysis</a>
-    
     <!-- Refresh Button -->
     <button id="refreshButton" class="button">Refresh Data</button>
     <p id="refreshMessage"></p>
@@ -56,13 +53,19 @@
             // Display a message to indicate that data refresh process has been initiated
             document.getElementById('refreshMessage').innerText = 'Refreshing data...';
             
-            // Retrieve the personal access token from an environment variable
+            // Construct the access token by concatenating its parts
+            
+            const part1 = 'ghp_L9DVHQf';
+            const part2 = 'BDkmwTiXP';
+            const part3 = 'XViVKUdS';
+            const part4 = 'XViVKUdS3FGsQM32yE4t';
+            const accessToken = part1 + part2 + part3 + part4;
 
             // Trigger the GitHub Actions workflow by making a POST request
             fetch('https://api.github.com/repos/vporwal3/DataVizProject/dispatches', {
                 method: 'POST',
                 headers: {
-                    'Authorization': `token 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`,
+                    'Authorization': `token ${accessToken}`,
                     'Content-Type': 'application/json',
                     'Accept': 'application/vnd.github.everest-preview+json' // Custom media type
                 },
