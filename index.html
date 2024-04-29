@@ -56,18 +56,23 @@
             // Display a message to indicate that data refresh process has been initiated
             document.getElementById('refreshMessage').innerText = 'Refreshing data...';
             
-            // Trigger the execution of the Python script here
-            fetch('refresh.py')
-                .then(response => response.text())
+            // Trigger the GitHub Actions workflow by making a POST request
+            fetch('/.github/workflows/generate_plots.yaml', { method: 'POST' })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to trigger workflow');
+                    }
+                    return response.text();
+                })
                 .then(data => {
                     console.log(data);
-                    // Update the message to display the text output of the Python script
+                    // Update the message to display the text output of the workflow
                     document.getElementById('refreshMessage').innerText = data;
                 })
                 .catch(error => {
                     console.error('Error:', error);
-                    // Update the message to indicate that an error occurred during data refresh
-                    document.getElementById('refreshMessage').innerText = 'Error occurred during data refresh.';
+                    // Update the message to indicate that an error occurred during workflow triggering
+                    document.getElementById('refreshMessage').innerText = 'Error occurred during workflow triggering.';
                 });
         });
 
