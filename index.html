@@ -37,6 +37,7 @@
     
     <!-- Refresh Button -->
     <button id="refreshButton" class="button">Refresh Data</button>
+    <p id="refreshMessage"></p>
 
     <h2>Visualization 1: Number of Buildings by Agency</h2>
     <div id="vis1"></div>
@@ -52,11 +53,22 @@
 
     <script>
         document.getElementById('refreshButton').addEventListener('click', function() {
+            // Display a message to indicate that data refresh process has been initiated
+            document.getElementById('refreshMessage').innerText = 'Refreshing data...';
+            
             // Trigger the execution of the Python script here
             fetch('refresh_data.py')
                 .then(response => response.text())
-                .then(data => console.log(data))
-                .catch(error => console.error('Error:', error));
+                .then(data => {
+                    console.log(data);
+                    // Update the message to display the text output of the Python script
+                    document.getElementById('refreshMessage').innerText = data;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    // Update the message to indicate that an error occurred during data refresh
+                    document.getElementById('refreshMessage').innerText = 'Error occurred during data refresh.';
+                });
         });
 
         // Embed Visualization 1
