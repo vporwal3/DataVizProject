@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'index.html'
+  repository_dispatch:
+    types: [refresh]
 
 jobs:
   generate-plots:
