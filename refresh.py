@@ -72,4 +72,5 @@ square_footage_chart = alt.Chart(df).mark_circle(opacity=0.5, stroke='black', st
 )
 
 square_footage_chart.properties(width='container').save("chart3.json")
+print("Data refreshed successfully!") 
 
