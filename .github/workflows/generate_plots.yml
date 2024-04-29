@@ -16,13 +16,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.x'  # Choose the appropriate Python version
+          python-version: '3.9.13'  # Choose the appropriate Python version
 
       - name: Install Dependencies
         run: pip install pandas matplotlib altair
 
       - name: Run Python Script
-        run: python generate_plots.py
+        run: python refresh.py
 
       - name: Commit and Push Changes
         run: |
