@@ -19,15 +19,17 @@ jobs:
           python-version: '3.9.13'  # Choose the appropriate Python version
 
       - name: Install Dependencies
-        run: pip install pandas matplotlib altair
+        run: |
+          pip install pandas matplotlib altair
+          python -m pip install --upgrade pip
 
       - name: Run Python Script
         run: python refresh.py
 
       - name: Commit and Push Changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "Generate JSON files"
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Generate JSON files"
+          commit_options: '-a'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
