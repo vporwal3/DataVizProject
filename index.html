@@ -56,11 +56,14 @@
             // Display a message to indicate that data refresh process has been initiated
             document.getElementById('refreshMessage').innerText = 'Refreshing data...';
             
+            // Retrieve the personal access token from an environment variable
+            const accessToken = process.env.PERSONAL_ACCESS_TOKEN;
+
             // Trigger the GitHub Actions workflow by making a POST request
             fetch('https://api.github.com/repos/vporwal3/DataVizProject/dispatches', {
                 method: 'POST',
                 headers: {
-                    'Authorization': `token ${secrets.PERSONAL_ACCESS_TOKEN}`,
+                    'Authorization': `token ${accessToken}`,
                     'Content-Type': 'application/json',
                     'Accept': 'application/vnd.github.everest-preview+json' // Custom media type
                 },
