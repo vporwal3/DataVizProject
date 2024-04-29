@@ -23,7 +23,7 @@ chart1 = alt.Chart(agency_buildings).mark_bar().encode(
 ).properties(title="Number of Buildings by Agency", width=600, height=400)
 
 
-chart1.properties(width='container').save("charts1.json")
+chart1.properties(width='container').save("chart1.json")
 
 import altair as alt
 
