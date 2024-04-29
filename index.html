@@ -57,25 +57,33 @@
             document.getElementById('refreshMessage').innerText = 'Refreshing data...';
             
             // Trigger the GitHub Actions workflow by making a POST request
-            fetch('/.github/workflows/refresh.yml', { method: 'POST' })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Failed to trigger workflow');
-                    }
-                    return response.text();
+            fetch('/repos/vporwal3/DataVizProject/dispatches', {
+                method: 'POST',
+                headers: {
+                    'Authorization': `token ${secrets.PERSONAL_ACCESS_TOKEN}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    event_type: 'refresh'
                 })
-                .then(data => {
-                    console.log(data);
-                    // Update the message to display the text output of the workflow
-                    document.getElementById('refreshMessage').innerText = data;
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    // Update the message to indicate that an error occurred during workflow triggering
-                    document.getElementById('refreshMessage').innerText = 'Error occurred during workflow triggering.';
-                });
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to trigger workflow');
+                }
+                return response.text();
+            })
+            .then(data => {
+                console.log(data);
+                // Update the message to display the text output of the workflow
+                document.getElementById('refreshMessage').innerText = data;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Update the message to indicate that an error occurred during workflow triggering
+                document.getElementById('refreshMessage').innerText = 'Error occurred during workflow triggering.';
+            });
         });
-        // Embed Visualization 1
 
         // Embed Visualization 1
         fetch('chart1.json')
