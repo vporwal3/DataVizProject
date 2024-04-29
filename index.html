@@ -57,12 +57,12 @@
             document.getElementById('refreshMessage').innerText = 'Refreshing data...';
             
             // Trigger the GitHub Actions workflow by making a POST request
-            fetch('/repos/vporwal3/DataVizProject/dispatches', {
+            fetch('https://api.github.com/repos/vporwal3/DataVizProject/dispatches', {
                 method: 'POST',
                 headers: {
-                    'Accept': 'application/vnd.github.everest-preview+json',
-                    'Authorization': 'token {{ secrets.PERSONAL_ACCESS_TOKEN }}',
-                    'Content-Type': 'application/json'
+                    'Authorization': 'token YOUR_PERSONAL_ACCESS_TOKEN',
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/vnd.github.everest-preview+json' // Custom media type
                 },
                 body: JSON.stringify({
                     event_type: 'refresh'
