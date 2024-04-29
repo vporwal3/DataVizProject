@@ -76,6 +76,8 @@
                 });
         });
         // Embed Visualization 1
+
+        // Embed Visualization 1
         fetch('chart1.json')
             .then(response => response.json())
             .then(spec => vegaEmbed('#vis1', spec, { "actions": false }));
