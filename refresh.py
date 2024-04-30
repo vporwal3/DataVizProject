@@ -55,4 +55,4 @@ chart3 = alt.Chart(df, title="Fuel Type Distribution").mark_arc().encode(
 
 dashboard = chart1 | chart2 | chart3
 
-dashboard.to_json('plot1.json')
+dashboard.to_json('chart1.json')
