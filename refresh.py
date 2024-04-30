@@ -23,7 +23,7 @@ chart1 = alt.Chart(agency_buildings).mark_bar().encode(
 ).properties(title="Number of Buildings by Agency", width=600, height=400)
 
 
-chart1.properties(width='container').save("chart1.json")
+#chart1.properties(width='container').save("chart1.json")
 
 import altair as alt
 
@@ -48,7 +48,7 @@ chart2 = alt.Chart(df).mark_circle(size=60).encode(
 ).properties(title="Buildings by Congressional and Senate Districts (Filtered by Year Acquired)", width=600, height=400)
 
 
-chart2.properties(width='container').save("chart2.json")
+#chart2.properties(width='container').save("chart2.json")
 
 
 status_dropdown = alt.binding_select(options=[None] + list(df['Bldg Status'].unique()), name='Status ')
@@ -71,6 +71,6 @@ square_footage_chart = alt.Chart(df).mark_circle(opacity=0.5, stroke='black', st
     alt.datum['Year Constructed'] > 0  # Filter out records without a valid 'Year Constructed'
 )
 
-square_footage_chart.properties(width='container').save("chart3.json")
+#square_footage_chart.properties(width='container').save("chart3.json")
 print("Data refreshed successfully!") 
 
