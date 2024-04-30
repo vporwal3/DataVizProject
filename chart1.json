@@ -1,0 +1,716 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 800,
+  "height": 600,
+  "title": {
+    "text": "Petroleum Reserves Across 10 U.S. Regions",
+    "frame": "group"
+  },
+  "style": "cell",
+  "data": [
+    {"name": "param_6_store"},
+    {
+      "name": "data-29e3450579df5f458d3977a234762627",
+      "values": [
+        {"Census Division": "New England", "Month": " January", "Oil": 2335},
+        {
+          "Census Division": "Middle Atlantic",
+          "Month": " January",
+          "Oil": 4514
+        },
+        {
+          "Census Division": "East North Central",
+          "Month": " January",
+          "Oil": 1471
+        },
+        {
+          "Census Division": "West North Central",
+          "Month": " January",
+          "Oil": 1683
+        },
+        {"Census Division": "South Atlantic", "Month": " January", "Oil": 8976},
+        {
+          "Census Division": "East South Central",
+          "Month": " January",
+          "Oil": 1009
+        },
+        {
+          "Census Division": "West South Central",
+          "Month": " January",
+          "Oil": 2095
+        },
+        {"Census Division": "Mountain", "Month": " January", "Oil": 335},
+        {
+          "Census Division": "Pacific Contiguous",
+          "Month": " January",
+          "Oil": 367
+        },
+        {
+          "Census Division": "Pacific Noncontiguous",
+          "Month": " January",
+          "Oil": 1266
+        },
+        {"Census Division": "New England", "Month": " February", "Oil": 2415},
+        {
+          "Census Division": "Middle Atlantic",
+          "Month": " February",
+          "Oil": 4511
+        },
+        {
+          "Census Division": "East North Central",
+          "Month": " February",
+          "Oil": 1457
+        },
+        {
+          "Census Division": "West North Central",
+          "Month": " February",
+          "Oil": 1701
+        },
+        {
+          "Census Division": "South Atlantic",
+          "Month": " February",
+          "Oil": 9188
+        },
+        {
+          "Census Division": "East South Central",
+          "Month": " February",
+          "Oil": 1015
+        },
+        {
+          "Census Division": "West South Central",
+          "Month": " February",
+          "Oil": 2091
+        },
+        {"Census Division": "Mountain", "Month": " February", "Oil": 355},
+        {
+          "Census Division": "Pacific Contiguous",
+          "Month": " February",
+          "Oil": 359
+        },
+        {
+          "Census Division": "Pacific Noncontiguous",
+          "Month": " February",
+          "Oil": 1204
+        },
+        {"Census Division": "New England", "Month": " March", "Oil": 2349},
+        {"Census Division": "Middle Atlantic", "Month": " March", "Oil": 4356},
+        {
+          "Census Division": "East North Central",
+          "Month": " March",
+          "Oil": 1776
+        },
+        {
+          "Census Division": "West North Central",
+          "Month": " March",
+          "Oil": 974
+        },
+        {"Census Division": "South Atlantic", "Month": " March", "Oil": 9159},
+        {
+          "Census Division": "East South Central",
+          "Month": " March",
+          "Oil": 1038
+        },
+        {
+          "Census Division": "West South Central",
+          "Month": " March",
+          "Oil": 2075
+        },
+        {"Census Division": "Mountain", "Month": " March", "Oil": 352},
+        {
+          "Census Division": "Pacific Contiguous",
+          "Month": " March",
+          "Oil": 341
+        },
+        {
+          "Census Division": "Pacific Noncontiguous",
+          "Month": " March",
+          "Oil": 1172
+        },
+        {"Census Division": "New England", "Month": " April", "Oil": 2342},
+        {"Census Division": "Middle Atlantic", "Month": " April", "Oil": 4333},
+        {
+          "Census Division": "East North Central",
+          "Month": " April",
+          "Oil": 1811
+        },
+        {
+          "Census Division": "West North Central",
+          "Month": " April",
+          "Oil": 963
+        },
+        {"Census Division": "South Atlantic", "Month": " April", "Oil": 9150},
+        {
+          "Census Division": "East South Central",
+          "Month": " April",
+          "Oil": 1023
+        },
+        {
+          "Census Division": "West South Central",
+          "Month": " April",
+          "Oil": 2072
+        },
+        {"Census Division": "Mountain", "Month": " April", "Oil": 339},
+        {
+          "Census Division": "Pacific Contiguous",
+          "Month": " April",
+          "Oil": 352
+        },
+        {
+          "Census Division": "Pacific Noncontiguous",
+          "Month": " April",
+          "Oil": 1159
+        },
+        {"Census Division": "New England", "Month": " May", "Oil": 2352},
+        {"Census Division": "Middle Atlantic", "Month": " May", "Oil": 4286},
+        {"Census Division": "East North Central", "Month": " May", "Oil": 1800},
+        {"Census Division": "West North Central", "Month": " May", "Oil": 960},
+        {"Census Division": "South Atlantic", "Month": " May", "Oil": 9037},
+        {"Census Division": "East South Central", "Month": " May", "Oil": 1001},
+        {"Census Division": "West South Central", "Month": " May", "Oil": 2036},
+        {"Census Division": "Mountain", "Month": " May", "Oil": 335},
+        {"Census Division": "Pacific Contiguous", "Month": " May", "Oil": 350},
+        {
+          "Census Division": "Pacific Noncontiguous",
+          "Month": " May",
+          "Oil": 1170
+        },
+        {"Census Division": "New England", "Month": " June", "Oil": 2386},
+        {"Census Division": "Middle Atlantic", "Month": " June", "Oil": 4316},
+        {
+          "Census Division": "East North Central",
+          "Month": " June",
+          "Oil": 1788
+        },
+        {"Census Division": "West North Central", "Month": " June", "Oil": 950},
+        {"Census Division": "South Atlantic", "Month": " June", "Oil": 9072},
+        {
+          "Census Division": "East South Central",
+          "Month": " June",
+          "Oil": 1149
+        },
+        {
+          "Census Division": "West South Central",
+          "Month": " June",
+          "Oil": 2029
+        },
+        {"Census Division": "Mountain", "Month": " June", "Oil": 321},
+        {"Census Division": "Pacific Contiguous", "Month": " June", "Oil": 349},
+        {
+          "Census Division": "Pacific Noncontiguous",
+          "Month": " June",
+          "Oil": 1196
+        },
+        {"Census Division": "New England", "Month": " July", "Oil": 2391},
+        {"Census Division": "Middle Atlantic", "Month": " July", "Oil": 4473},
+        {
+          "Census Division": "East North Central",
+          "Month": " July",
+          "Oil": 1771
+        },
+        {"Census Division": "West North Central", "Month": " July", "Oil": 941},
+        {"Census Division": "South Atlantic", "Month": " July", "Oil": 8980},
+        {
+          "Census Division": "East South Central",
+          "Month": " July",
+          "Oil": 1135
+        },
+        {
+          "Census Division": "West South Central",
+          "Month": " July",
+          "Oil": 2003
+        },
+        {"Census Division": "Mountain", "Month": " July", "Oil": 318},
+        {"Census Division": "Pacific Contiguous", "Month": " July", "Oil": 345},
+        {
+          "Census Division": "Pacific Noncontiguous",
+          "Month": " July",
+          "Oil": 1217
+        },
+        {"Census Division": "New England", "Month": " August", "Oil": 2381},
+        {"Census Division": "Middle Atlantic", "Month": " August", "Oil": 4493},
+        {
+          "Census Division": "East North Central",
+          "Month": " August",
+          "Oil": 1403
+        },
+        {
+          "Census Division": "West North Central",
+          "Month": " August",
+          "Oil": 923
+        },
+        {"Census Division": "South Atlantic", "Month": " August", "Oil": 8904},
+        {
+          "Census Division": "East South Central",
+          "Month": " August",
+          "Oil": 1106
+        },
+        {
+          "Census Division": "West South Central",
+          "Month": " August",
+          "Oil": 1967
+        },
+        {"Census Division": "Mountain", "Month": " August", "Oil": 317},
+        {
+          "Census Division": "Pacific Contiguous",
+          "Month": " August",
+          "Oil": 341
+        },
+        {
+          "Census Division": "Pacific Noncontiguous",
+          "Month": " August",
+          "Oil": 1069
+        },
+        {"Census Division": "New England", "Month": " September", "Oil": 2359},
+        {
+          "Census Division": "Middle Atlantic",
+          "Month": " September",
+          "Oil": 4515
+        },
+        {
+          "Census Division": "East North Central",
+          "Month": " September",
+          "Oil": 1407
+        },
+        {
+          "Census Division": "West North Central",
+          "Month": " September",
+          "Oil": 930
+        },
+        {
+          "Census Division": "South Atlantic",
+          "Month": " September",
+          "Oil": 8899
+        },
+        {
+          "Census Division": "East South Central",
+          "Month": " September",
+          "Oil": 1101
+        },
+        {
+          "Census Division": "West South Central",
+          "Month": " September",
+          "Oil": 1923
+        },
+        {"Census Division": "Mountain", "Month": " September", "Oil": 305},
+        {
+          "Census Division": "Pacific Contiguous",
+          "Month": " September",
+          "Oil": 340
+        },
+        {
+          "Census Division": "Pacific Noncontiguous",
+          "Month": " September",
+          "Oil": 1096
+        },
+        {"Census Division": "New England", "Month": " October", "Oil": 2423},
+        {
+          "Census Division": "Middle Atlantic",
+          "Month": " October",
+          "Oil": 4522
+        },
+        {
+          "Census Division": "East North Central",
+          "Month": " October",
+          "Oil": 1377
+        },
+        {
+          "Census Division": "West North Central",
+          "Month": " October",
+          "Oil": 912
+        },
+        {"Census Division": "South Atlantic", "Month": " October", "Oil": 8892},
+        {
+          "Census Division": "East South Central",
+          "Month": " October",
+          "Oil": 1087
+        },
+        {
+          "Census Division": "West South Central",
+          "Month": " October",
+          "Oil": 1925
+        },
+        {"Census Division": "Mountain", "Month": " October", "Oil": 295},
+        {
+          "Census Division": "Pacific Contiguous",
+          "Month": " October",
+          "Oil": 336
+        },
+        {
+          "Census Division": "Pacific Noncontiguous",
+          "Month": " October",
+          "Oil": 968
+        },
+        {"Census Division": "New England", "Month": " November", "Oil": 2578},
+        {
+          "Census Division": "Middle Atlantic",
+          "Month": " November",
+          "Oil": 4551
+        },
+        {
+          "Census Division": "East North Central",
+          "Month": " November",
+          "Oil": 1390
+        },
+        {
+          "Census Division": "West North Central",
+          "Month": " November",
+          "Oil": 921
+        },
+        {
+          "Census Division": "South Atlantic",
+          "Month": " November",
+          "Oil": 8797
+        },
+        {
+          "Census Division": "East South Central",
+          "Month": " November",
+          "Oil": 1074
+        },
+        {
+          "Census Division": "West South Central",
+          "Month": " November",
+          "Oil": 1874
+        },
+        {"Census Division": "Mountain", "Month": " November", "Oil": 300},
+        {
+          "Census Division": "Pacific Contiguous",
+          "Month": " November",
+          "Oil": 329
+        },
+        {
+          "Census Division": "Pacific Noncontiguous",
+          "Month": " November",
+          "Oil": 937
+        },
+        {"Census Division": "New England", "Month": " December", "Oil": 2592},
+        {
+          "Census Division": "Middle Atlantic",
+          "Month": " December",
+          "Oil": 4732
+        },
+        {
+          "Census Division": "East North Central",
+          "Month": " December",
+          "Oil": 810
+        },
+        {
+          "Census Division": "West North Central",
+          "Month": " December",
+          "Oil": 907
+        },
+        {
+          "Census Division": "South Atlantic",
+          "Month": " December",
+          "Oil": 8863
+        },
+        {
+          "Census Division": "East South Central",
+          "Month": " December",
+          "Oil": 1330
+        },
+        {
+          "Census Division": "West South Central",
+          "Month": " December",
+          "Oil": 1892
+        },
+        {"Census Division": "Mountain", "Month": " December", "Oil": 308},
+        {
+          "Census Division": "Pacific Contiguous",
+          "Month": " December",
+          "Oil": 323
+        },
+        {
+          "Census Division": "Pacific Noncontiguous",
+          "Month": " December",
+          "Oil": 1055
+        }
+      ]
+    },
+    {
+      "name": "data_0",
+      "source": "data-29e3450579df5f458d3977a234762627",
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "datum[\"Month\"]===1 ? 0 : datum[\"Month\"]===2 ? 1 : datum[\"Month\"]===3 ? 2 : datum[\"Month\"]===4 ? 3 : datum[\"Month\"]===5 ? 4 : datum[\"Month\"]===6 ? 5 : datum[\"Month\"]===7 ? 6 : datum[\"Month\"]===8 ? 7 : datum[\"Month\"]===9 ? 8 : datum[\"Month\"]===10 ? 9 : datum[\"Month\"]===11 ? 10 : datum[\"Month\"]===12 ? 11 : 12",
+          "as": "x_Month_sort_index"
+        }
+      ]
+    },
+    {
+      "name": "data_1",
+      "source": "data_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Oil\"]) && isFinite(+datum[\"Oil\"])"
+        }
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "unit",
+      "value": {},
+      "on": [
+        {"events": "pointermove", "update": "isTuple(group()) ? group() : unit"}
+      ]
+    },
+    {
+      "name": "param_6",
+      "update": "vlSelectionResolve(\"param_6_store\", \"union\")"
+    },
+    {
+      "name": "param_6_Month",
+      "on": [
+        {"events": [{"source": "view", "type": "dblclick"}], "update": "null"},
+        {
+          "events": {"signal": "param_6_translate_delta"},
+          "update": "panLinear(param_6_translate_anchor.extent_x, -param_6_translate_delta.x / width)"
+        },
+        {
+          "events": {"signal": "param_6_zoom_delta"},
+          "update": "zoomLinear(domain(\"x\"), param_6_zoom_anchor.x, param_6_zoom_delta)"
+        }
+      ]
+    },
+    {
+      "name": "param_6_Oil",
+      "on": [
+        {"events": [{"source": "view", "type": "dblclick"}], "update": "null"},
+        {
+          "events": {"signal": "param_6_translate_delta"},
+          "update": "panLog(param_6_translate_anchor.extent_y, param_6_translate_delta.y / height)"
+        },
+        {
+          "events": {"signal": "param_6_zoom_delta"},
+          "update": "zoomLog(domain(\"y\"), param_6_zoom_anchor.y, param_6_zoom_delta)"
+        }
+      ]
+    },
+    {
+      "name": "param_6_tuple",
+      "on": [
+        {
+          "events": [{"signal": "param_6_Month || param_6_Oil"}],
+          "update": "param_6_Month && param_6_Oil ? {unit: \"view_6\", fields: param_6_tuple_fields, values: [param_6_Month,param_6_Oil]} : null"
+        }
+      ]
+    },
+    {
+      "name": "param_6_tuple_fields",
+      "value": [
+        {"field": "Month", "channel": "x", "type": "E"},
+        {"field": "Oil", "channel": "y", "type": "R"}
+      ]
+    },
+    {
+      "name": "param_6_translate_anchor",
+      "value": {},
+      "on": [
+        {
+          "events": [{"source": "scope", "type": "pointerdown"}],
+          "update": "{x: x(unit), y: y(unit), extent_x: domain(\"x\"), extent_y: domain(\"y\")}"
+        }
+      ]
+    },
+    {
+      "name": "param_6_translate_delta",
+      "value": {},
+      "on": [
+        {
+          "events": [
+            {
+              "source": "window",
+              "type": "pointermove",
+              "consume": true,
+              "between": [
+                {"source": "scope", "type": "pointerdown"},
+                {"source": "window", "type": "pointerup"}
+              ]
+            }
+          ],
+          "update": "{x: param_6_translate_anchor.x - x(unit), y: param_6_translate_anchor.y - y(unit)}"
+        }
+      ]
+    },
+    {
+      "name": "param_6_zoom_anchor",
+      "on": [
+        {
+          "events": [{"source": "scope", "type": "wheel", "consume": true}],
+          "update": "{x: invert(\"x\", x(unit)), y: invert(\"y\", y(unit))}"
+        }
+      ]
+    },
+    {
+      "name": "param_6_zoom_delta",
+      "on": [
+        {
+          "events": [{"source": "scope", "type": "wheel", "consume": true}],
+          "force": true,
+          "update": "pow(1.001, event.deltaY * pow(16, event.deltaMode))"
+        }
+      ]
+    },
+    {
+      "name": "param_6_modify",
+      "on": [
+        {
+          "events": {"signal": "param_6_tuple"},
+          "update": "modify(\"param_6_store\", param_6_tuple, true)"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "view_6_pathgroup",
+      "type": "group",
+      "from": {
+        "facet": {
+          "name": "faceted_path_view_6_main",
+          "data": "data_0",
+          "groupby": ["Census Division"]
+        }
+      },
+      "encode": {
+        "update": {
+          "width": {"field": {"group": "width"}},
+          "height": {"field": {"group": "height"}}
+        }
+      },
+      "marks": [
+        {
+          "name": "view_6_marks",
+          "type": "line",
+          "clip": true,
+          "style": ["line"],
+          "sort": {"field": "datum[\"x_Month_sort_index\"]"},
+          "interactive": true,
+          "from": {"data": "faceted_path_view_6_main"},
+          "encode": {
+            "update": {
+              "stroke": {"scale": "color", "field": "Census Division"},
+              "description": {
+                "signal": "\"Month: \" + (isValid(datum[\"Month\"]) ? datum[\"Month\"] : \"\"+datum[\"Month\"]) + \"; Petroleum Liquids (Thousand Barrels): \" + (format(datum[\"Oil\"], \"\")) + \"; Census Division: \" + (isValid(datum[\"Census Division\"]) ? datum[\"Census Division\"] : \"\"+datum[\"Census Division\"])"
+              },
+              "x": {"scale": "x", "field": "Month"},
+              "y": {"scale": "y", "field": "Oil"},
+              "defined": {
+                "signal": "isValid(datum[\"Oil\"]) && isFinite(+datum[\"Oil\"])"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "layer_1_marks",
+      "type": "symbol",
+      "clip": true,
+      "style": ["circle"],
+      "interactive": true,
+      "from": {"data": "data_1"},
+      "encode": {
+        "update": {
+          "opacity": {"value": 0.7},
+          "size": {"value": 60},
+          "fill": {"scale": "color", "field": "Census Division"},
+          "tooltip": {
+            "signal": "{\"Census Division\": isValid(datum[\"Census Division\"]) ? datum[\"Census Division\"] : \"\"+datum[\"Census Division\"], \"Month\": isValid(datum[\"Month\"]) ? datum[\"Month\"] : \"\"+datum[\"Month\"], \"Oil\": format(datum[\"Oil\"], \"\")}"
+          },
+          "ariaRoleDescription": {"value": "circle"},
+          "description": {
+            "signal": "\"Month: \" + (isValid(datum[\"Month\"]) ? datum[\"Month\"] : \"\"+datum[\"Month\"]) + \"; Oil: \" + (format(datum[\"Oil\"], \"\")) + \"; Census Division: \" + (isValid(datum[\"Census Division\"]) ? datum[\"Census Division\"] : \"\"+datum[\"Census Division\"])"
+          },
+          "x": {"scale": "x", "field": "Month"},
+          "y": {"scale": "y", "field": "Oil"},
+          "shape": {"value": "circle"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "point",
+      "domain": {
+        "data": "data_0",
+        "field": "Month",
+        "sort": {"op": "min", "field": "x_Month_sort_index"}
+      },
+      "range": [0, {"signal": "width"}],
+      "padding": 0.5
+    },
+    {
+      "name": "y",
+      "type": "log",
+      "domain": {
+        "fields": [
+          {"data": "data_0", "field": "Oil"},
+          {"data": "data_1", "field": "Oil"}
+        ]
+      },
+      "domainRaw": {"signal": "param_6[\"Oil\"]"},
+      "range": [{"signal": "height"}, 0],
+      "nice": true
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {
+        "fields": [
+          {"data": "data_0", "field": "Census Division"},
+          {"data": "data_1", "field": "Census Division"}
+        ],
+        "sort": true
+      },
+      "range": "category"
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Month",
+      "labelAlign": "right",
+      "labelAngle": 270,
+      "labelBaseline": "middle",
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Petroleum Liquids (Thousand Barrels)",
+      "labelOverlap": "greedy",
+      "zindex": 0
+    }
+  ],
+  "legends": [
+    {
+      "stroke": "color",
+      "symbolType": "circle",
+      "title": "Census Division",
+      "fill": "color",
+      "encode": {"symbols": {"update": {"opacity": {"value": 0.7}}}}
+    }
+  ]
+}
