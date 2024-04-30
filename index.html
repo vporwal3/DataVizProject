@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device_width, initial-scale=1.0">
     <title> Energy Insights Observatory </title>
     <style>
         /* Add some basic styling to ensure containers have a width */
@@ -45,7 +45,7 @@
 
     <h2>Visualization 1: Petroleum Reserves Across 10 U.S. Regions</h2>
     <div id="vis1"></div>
-    <p id="vis1Description">This sub-data is about monthly coals, petroleum, and petcoke reserves in different regions and states in the US for the past year. I picked the petroleum part for the visualization because I  would like to know why oil prices are so high these months.The plot displayed is an interactive visualization showing the petroleum liquids reserves (measured in thousand barrels) across 10 regions in the United States for 2023. This plot provides a clear and informative way to analyze and compare the petroleum reserves across different areas.</p>
+    <p id="vis1Description">This sub-data is about monthly coals, petroleum, and petcoke reserves in different regions and states in the US for the past year. I picked the petroleum part for the visualization because I would like to know why oil prices are so high these months. The plot displayed is an interactive visualization showing the petroleum liquids reserves (measured in thousand barrels) across 10 regions in the United States for 2023. This plot provides a clear and informative way to analyze and compare the petroleum reserves across different areas.</p>
 
     <h2>Visualization 2: Buildings by Congressional and Senate Districts</h2>
     <div id="vis2"></div>
@@ -81,12 +81,7 @@
                     event_type: 'refresh'
                 })
             })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to trigger workflow');
-                }
-                return response.text();
-            })
+            .then(response => response.text())
             .then(data => {
                 console.log(data);
                 document.getElementById('refreshMessage').innerText = data;
@@ -104,17 +99,17 @@
 
         // Embed Visualization 2
         fetch('chart2.json')
-            .then response => response.json()
+            .then(response => response.json())
             .then(spec => vegaEmbed('#vis2', spec, { "actions": false }));
 
         // Embed Visualization 3
         fetch('chart3.json')
-            .then response => response.json()
+            .then(response => response.json())
             .then(spec => vegaEmbed('#vis3', spec, { "actions": false }));
 
         // Embed Visualization 4
         fetch('chart4.json')
-            .then response => response.json()
+            .then(response => response.json())
             .then(spec => vegaEmbed('#vis4', spec, { "actions": false }));
     </script>
 </body>
