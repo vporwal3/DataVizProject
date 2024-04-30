@@ -6,7 +6,7 @@
     <title>Building Inventory Visualizations</title>
     <style>
         /* Add some basic styling to ensure containers have a width */
-        #vis1, #vis2, #vis3 {
+        #vis1, #vis2, #vis3, #vis4 {
             width: 100%; /* Use 100% of the container width */
             height: 500px; /* Define a fixed height for the visualizations */
         }
@@ -39,25 +39,31 @@
     <button id="refreshButton" class="button">Refresh Data</button>
     <p id="refreshMessage"></p>
 
+    <!-- Dataset Overview Section -->
+    <h2>Dataset Overview</h2>
+    <p id="datasetOverview">[Add dataset overview here]</p>
+
     <h2>Visualization 1: Number of Buildings by Agency</h2>
     <div id="vis1"></div>
-    <!-- Visualization 1 description -->
+    <p id="vis1Description">[Add description here]</p>
 
     <h2>Visualization 2: Buildings by Congressional and Senate Districts</h2>
     <div id="vis2"></div>
-    <!-- Visualization 2 description -->
+    <p id="vis2Description">[Add description here]</p>
 
     <h2>Visualization 3: Square Footage of Buildings Over Years by Status</h2>
     <div id="vis3"></div>
-    <!-- Visualization 3 description -->
+    <p id="vis3Description">[Add description here]</p>
+
+    <h2>Visualization 4: [New Visualization Title]</h2>
+    <div id="vis4"></div>
+    <p id="vis4Description">[Add description here]</p>
 
     <script>
         document.getElementById('refreshButton').addEventListener('click', function() {
             // Display a message to indicate that data refresh process has been initiated
             document.getElementById('refreshMessage').innerText = 'Refreshing data...';
-            
-            // Define separate constants for parts of the token and concatenate them
-            
+
             const part1 = 'ghp_ff3U3s';
             const part2 = 'IQ9whVwdP';
             const part3 = 'MxkUQPdF0yYg0WU09lr0f';
@@ -69,7 +75,7 @@
                 headers: {
                     'Authorization': `token ${accessToken}`,
                     'Content-Type': 'application/json',
-                    'Accept': 'application/vnd.github.everest-preview+json' // Custom media type
+                    'Accept': 'application/vnd.github.everest-preview+json'
                 },
                 body: JSON.stringify({
                     event_type: 'refresh'
@@ -83,12 +89,10 @@
             })
             .then(data => {
                 console.log(data);
-                // Update the message to display the text output of the workflow
                 document.getElementById('refreshMessage').innerText = data;
             })
             .catch(error => {
                 console.error('Error:', error);
-                // Update the message to indicate that an error occurred during workflow triggering
                 document.getElementById('refreshMessage').innerText = 'Error occurred during workflow triggering.';
             });
         });
@@ -100,13 +104,18 @@
 
         // Embed Visualization 2
         fetch('chart2.json')
-            .then(response => response.json())
+            .then response => response.json()
             .then(spec => vegaEmbed('#vis2', spec, { "actions": false }));
 
         // Embed Visualization 3
         fetch('chart3.json')
-            .then(response => response.json())
+            .then response => response.json()
             .then(spec => vegaEmbed('#vis3', spec, { "actions": false }));
+
+        // Embed Visualization 4
+        fetch('chart4.json')
+            .then response => response.json()
+            .then(spec => vegaEmbed('#vis4', spec, { "actions": false }));
     </script>
 </body>
 </html>
