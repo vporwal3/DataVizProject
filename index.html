@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device_width, initial-scale=1.0">
-    <title> Energy Insights Observatory </title>
+    <title>Energy Insights Observatory</title>
     <style>
         #vis1, #vis2, #vis3, #vis4, #vis5 {
             width: 100%; /* Full width */
@@ -42,9 +42,9 @@
     <h2>Dataset Overview</h2>
     <p id="datasetOverview">The dataset from the Form EIA-923 gathers comprehensive electric power data on a monthly and annual basis, encompassing details such as electricity generation, fuel consumption, fossil fuel stocks, and receipts at both the power plant and prime mover levels. It comprises various schedules covering fuel receipts and costs, generator data including generation and fuel consumption, fossil fuel stocks, non-utility source and disposition of electricity, and environmental data. With monthly data from approximately 2,806 plants and annual final data from both monthly and annual surveys, the dataset offers insights into the operational dynamics of over 11,000 plants, including utility and nonutility sectors.</p>
 
-    <h2>Interactive Oil Stock Dashboard</h2>
+    <h2>Visualization 1: [New Plot Description Here]</h2>
     <div id="vis1"></div>
-    <p id="vis1Description">The dashboard provides insights into oil stocks across the United States. A histogram presents the total oil quantity per state, offering a state-wise comparison. A line chart shows the monthly trend of oil quantities for the year, dynamically updating to reflect individual states. Additionally, a pie chart visualizes the distribution of fuel types, allowing for in-depth exploration of the overall fuel composition, as well as state-specific variations. This comprehensive dashboard offers an interactive and insightful view of the U.S. oil sector.</p>
+    <p id="vis1Description">[Add a detailed description of the new visualization here.]</p>
 
     <h2>Petroleum Reserves Across 10 U.S. Regions</h2>
     <div id="vis2"></div>
@@ -102,8 +102,8 @@
 
         // Embed Visualization 2
         fetch('chart2.json')
-            .then response => response.json()
-            .then spec => vegaEmbed('#vis2', spec, { "actions": false }));
+            .then(response => response.json())
+            .then(spec => vegaEmbed('#vis2', spec, { "actions": false }));
 
         // Embed Visualization 3
         fetch('chart3.json')
@@ -112,13 +112,13 @@
 
         // Embed Visualization 4
         fetch('chart4.json')
-            .then response => response.json()
-            .then spec => vegaEmbed('#vis4', spec, { "actions": false }));
+            .then(response => response.json())
+            .then(spec => vegaEmbed('#vis4', spec, { "actions": false }));
 
         // Embed Visualization 5
         fetch('chart5.json')
-            .then response => response.json()
-            .then spec => vegaEmbed('#vis5', spec, { "actions": false }));
+            .then(response => response.json())
+            .then(spec => vegaEmbed('#vis5', spec, { "actions": false }));
     </script>
 </body>
 </html>
